@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="../css/articulo.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header id="menu-superior">
+        <div class="container">
+            <div id="menu">
+                <a class="img-logo" href="../index.html">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                <ul id="nav" class="nawRecetas">
+                    <li class="li"><a href="../index.html">Home</a></li>
+                    <li class="li"><a href="./recetas.html">Recetas</a></li>
+                    <li class="li"><a class="actual" href="./productos.html">Productos</a></li>
+                    <li class="li"><a href="./zona_interactiva.html">Zona interactiva</a></li>
+                    <li class="li"><a href="../index.html">Blog</a></li>
+                    <li class="li-busqueda">
+                        <form class="nav-search" action="https://www.mercadolibre.com.co/jm/search" method="GET">
+                            <input type="text" placeholder="Buscar producto" maxlength="120" autofocus=""
+                                autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
+                                tabindex="2">
+                            <button type="submit" class="nav-button" tabindex="3">
+                                <div role="img" class="nav-search-icon"></div>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="li">
+                    <div class="header-nav">
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                    </div>
+                </div>
+                <div class="container-user">
+                    <div class="user">H</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section -->
+
+
+
+
+    <!-- product View section -->
+    <section id="section-productView">
+        <div class="container-product">
+            <div class="img">
+                <img src="../img/Productos/Cuchillo pan.png" alt="">
+
+            </div>
+            <div class="data">
+                <h3>
+                    Cuchillo para pan
+                    <button class="favorito">
+                        <div class="ti-heart"></div>
+                    </button>
+                </h3>
+                <h2>$ 21.400.oo
+                    <li> <span>Categoria</span>: utencilios</li>
+                    <li> <span>Disponibilidad</span>: Con stock</li>
+                    </ul>
+                    <p>
+                        Los cuchillos paneros o de sierra permiten cortar porciones de mayor o menor grosor, pero
+                        siempre obteniendo un corte limpio y preciso, sin necesidad de ejercer demasiada presión sobre
+                        el pan, pastel, bizcocho, etc.
+                        
+                    </p>
+                    <form class="add-card" action="">
+                        <label for="">Cantidad: </label>
+                        <input type="number" value="1">
+                        <button>Add to card</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+    <!-- end product View section -->
+
+
+    <!-- description section -->
+    <section id="section-description">
+        <div class="container-description">
+            <div class="container-tabs">
+                <div class="content-tabs">
+                    <ul class="tabs">
+                        <li id="button1" class="tab" onclick="mostraTab(1)">Descripción</li>
+                        <li id="button2" class="tab" onclick="mostraTab(2)">Especificaciones</li>
+                        <li id="button3" class="tab" onclick="mostraTab(3)">Comentarios</li>
+                    </ul>
+                </div>
+                <div class="content-tab">
+                    <!-- descripciones -->
+                    <div id="tab-description" class="tab-description">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sequi quidem, velit
+                            accusamus
+                            consectetur non ullam earum eius tenetur suscipit blanditiis modi atque esse, aliquam fugiat
+                            facilis
+                            nulla dicta saepe.
+                        </p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas voluptatem ad
+                            nulla at
+                            rerum, ullam pariatur aliquam vel tempore. Fuga veniam hic esse dignissimos nihil facilis.
+                            Consequatur, et facilis.
+                        </p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil voluptates, voluptate
+                            ducimus
+                            dolorem rerum doloremque maxime. Illum natus voluptatum repellendus voluptatem nemo ab
+                            dicta,
+                            veniam
+                            sunt, architecto beatae repudiandae quos!
+                        </p>
+                    </div>
+                    <!-- especificaciones -->
+                    <div id="tab-specification" class="tab-specification">
+                        <table>
+                            <tr class="item">
+                                <td class="descrip">Ancho</td>
+                                <td class="valor">100mm</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="descrip">Alto</td>
+                                <td class="valor">500mm</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="descrip">Profundidad</td>
+                                <td class="valor">50mm</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="descrip">Peso</td>
+                                <td class="valor">30g</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="descrip">Cada caja contiene</td>
+                                <td class="valor">1 pieza</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- cometarios -->
+                    <div id="tab-comments" class="tab-comments">
+                        <div class="comments">
+                            <div class="comment-item">
+                                <div class="header-comment">
+                                    <div class="user-img">
+                                        <img src="../img/fondo_seccion_1.png" alt="">
+                                    </div>
+                                    <div class="user-info">
+                                        <h4>Hernan B.</h4>
+                                        <p>10 de enero de 2018 a las 01:00 pm</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint blanditiis similique
+                                    id
+                                    accusantium nihil, aspernatur sit modi quae odio laborum quasi, mollitia omnis.
+                                    Aliquid
+                                    quasi aut inventore qui delectus optio!
+                                </p>
+                            </div>
+                            <div class="comment-item replay">
+                                <div class="header-comment">
+                                    <div class="user-img">
+                                        <img src="../img/fondo_seccion_2.png" alt="">
+                                    </div>
+                                    <div class="user-info">
+                                        <h4>Ediwn A.</h4>
+                                        <p>10 de enero de 2018 a las 01:00 pm</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint blanditiis similique
+                                    id
+                                    accusantium nihil, aspernatur sit modi quae odio laborum quasi, mollitia omnis.
+                                    Aliquid
+                                    quasi aut inventore qui delectus optio!
+                                </p>
+                            </div>
+                            <div class="comment-item">
+                                <div class="header-comment">
+                                    <div class="user-img">
+                                        <img src="../img/fondo_seccion_3.png" alt="">
+                                    </div>
+                                    <div class="user-info">
+                                        <h4>Gisella C.</h4>
+                                        <p>10 de enero de 2018 a las 01:00 pm</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint blanditiis similique
+                                    id
+                                    accusantium nihil, aspernatur sit modi quae odio laborum quasi, mollitia omnis.
+                                    Aliquid
+                                    quasi aut inventore qui delectus optio!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="new-comments">
+                            <form action="">
+                                <label for="">Publicar comentario</label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <button>Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end description section -->
+
+    <!-- product related section -->
+    <section id="section-productRelated">
+
+    </section>
+    <!-- end product related section -->
+
+
+
+
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            © 2020 All Rights Reserved By
+            <a href="#">Club pasteleria</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+    <script src="../js/articulo.js"></script>
+
+</body>
+
+</html>

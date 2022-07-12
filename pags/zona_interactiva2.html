@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona interactiva</title>
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="../css/zona_interactiva2.css">
+</head>
+
+<body>
+
+    <div class="fondo">
+        <video class="video" src="../img/Videos/video1.mp4" autoplay loop></video>
+    </div>
+    <div class="Zona-int">
+
+
+        <!--  header section -->
+        <header id="nav_drawer">
+            <a href="../index.html">
+                <img src="../img/logo_nombre-removebg.png" alt="logo" id="navbar_logo" />
+            </a>
+            <h1>Cocina interactiva</h1>
+            <div id="activities">
+                <div id="activity1" class="activity">
+                    <p class="item">Selecciona una receta</p>
+                    <div class="progress">
+                        <img src="../img/iconos/check.png" alt="">
+                    </div>
+                </div>
+                <div id="activity2" class="activity">
+                    <p class="item">Ingredientes</p>
+                    <div class="progress">
+                        <img src="../img/iconos/precaution.png" alt="">
+                    </div>
+                </div>
+                <div id="activity3" class="activity">
+                    <p class="item">Utensilios y equipos </p>
+                    <div class="progress"></div>
+                </div>
+                <div id="activity4" class="activity">
+                    <p class="item">Batir huevos, leche, aceite....
+                    </p>
+                    <div class="progress">
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- end header section -->
+
+        <section id="sectio-ZonaInt">
+
+            <div class="container-zonaInt">
+                <div class="title"> PASO 2. <span> Ingredientes necesarios</span> </div>
+                <div class="contend">
+                    <!-- end header section -->
+                    <div class="ingredientes">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>INGREDIENTES</td>
+                                    <td class="centrar">CANTIDAD REQUERIDA</td>
+                                    <td class="centrar">CANTIDAD INGRESADA</td>
+                                    <td class="centrar">SINCRONIZAR</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>huevos</td>
+                                    <td class="centrar">3 unid</td>
+                                    <td class="centrar"><input class="inputValue" type="text"></td>
+                                    <td class="centrar"><img class="img-table" src="../img/iconos/cargando.png" alt="">
+                                    </td>
+                                    <td class="centrar"><input class="checkItem" type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>avena en polvo</td>
+                                    <td class="centrar">300 g</td><!-- -->
+                                    <td class="centrar"><input class="inputValue" type="text"></td>
+                                    <td class="centrar"><img class="img-table" src="../img/iconos/cargando.png" alt="">
+                                    </td>
+                                    <td class="centrar"><input class="checkItem" type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>avena en hojuelas</td>
+                                    <td class="centrar">150 g</td><!-- -->
+                                    <td class="centrar"><input class="inputValue" type="text"></td>
+                                    <td class="centrar"><img class="img-table" src="../img/iconos/cargando.png" alt="">
+                                    </td>
+                                    <td class="centrar"><input class="checkItem" type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>leche</td>
+                                    <td class="centrar">200 ml</td><!-- -->
+                                    <td class="centrar"><input class="inputValue" type="text"></td>
+                                    <td class="centrar"><img class="img-table" src="../img/iconos/cargando.png" alt="">
+                                    </td>
+                                    <td class="centrar"><input class="checkItem" type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>aceite de oliva</td>
+                                    <td class="centrar">2 cucharadas</td><!-- -->
+                                    <td class="centrar"><input class="inputValue" type="number"></td>
+                                    <td class="centrar"><img class="img-table" src="../img/iconos/cargando.png" alt="">
+                                    </td>
+                                    <td class="centrar"><input class="checkItem" type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>esencia de vainilla</td>
+                                    <td class="centrar">2 cucharadas</td><!-- -->
+                                    <td class="centrar"><input class="inputValue" type="number"></td>
+                                    <td class="centrar"><img class="img-table" src="../img/iconos/cargando.png" alt="">
+                                    </td>
+                                    <td class="centrar"><input class="checkItem" type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>polvo de hornear</td>
+                                    <td class="centrar">2 cucharadas</td><!-- -->
+                                    <td class="centrar"><input class="inputValue" type="number"></td>
+                                    <td class="centrar"><img class="img-table" src="../img/iconos/cargando.png" alt="">
+                                    </td>
+                                    <td class="centrar"><input class="checkItem" type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>arándanos</td>
+                                    <td class="centrar">200 gr</td><!-- -->
+                                    <td class="centrar"><input class="inputValue" type="number"></td>
+                                    <td class="centrar"><img class="img-table" src="../img/iconos/cargando.png" alt="">
+                                    </td>
+                                    <td class="centrar"><input class="checkItem" type="checkbox"></td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="opciones">
+                        <img src="../img/iconos/synchronization.png" alt="">
+                        <img src="../img/iconos/calculadora.png" alt="">
+                        <h4>3 porciones</h4>
+                    </div>
+                </div>
+                <div class="botones">
+                    <a href="../pags/zona_interactiva.html">
+                        <button>Atras</button>
+                    </a>
+                    <div class="msg"></div>
+                    <a href="../pags/zona_interactiva3.html">
+                        <button>Siguiente</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <!-- footer section -->
+        <section class="container-fluid footer_section">
+            <p>
+                © 2020 All Rights Reserved By
+                <a href="#">Club Pasteleria</a>
+            </p>
+        </section>
+        <!-- end footer section -->
+
+    </div>
+    <script src="../js/zona_interactiva.js"></script>
+</body>
+
+</html>

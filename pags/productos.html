@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="../css/productos.css">
+</head>
+
+<body>
+    <!-- header section --> 
+    <header id="menu-superior">
+        <div class="container">
+            <div id="menu">
+                <a class="img-logo" href="../index.html">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                <ul class="nawRecetas">
+                    <li class="li"><a href="../index.html">Home</a></li>
+                    <li class="li"><a href="./recetas.html">Recetas</a></li>
+                    <li class="li"><a class="actual" href="./productos.html">Productos</a></li>
+                    <li class="li"><a href="./zona_interactiva.html">Zona interactiva</a></li>
+                    <li class="li"><a href="../index.html">Blog</a></li>
+                    <li class="li-busqueda">
+                        <form class="nav-search" action="https://www.mercadolibre.com.co/jm/search" method="GET">
+                            <input type="text" placeholder="Buscar producto" maxlength="120" autofocus=""
+                                autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
+                                tabindex="2">
+                            <button type="submit" class="nav-button" tabindex="3">
+                                <div role="img" class="nav-search-icon"></div>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="li">
+                    <div class="header-nav">
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                    </div>
+                </div>
+                <div class="container-user">
+                    <div class="user">H</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section -->
+
+
+
+
+    <!-- slider section -->
+    <section class=" slider_section ">
+
+        <div class="slider-container">
+            <div class="contenido-slider">
+                <img src="../img/Productos/Promosiones/promo1.png" alt="">
+                <div class="description">
+                    <h2>MOLDES SILICONADOS</h2>
+                    <p>Ideales para altas temperaturas y con facilidad de limpieza.</p>
+                    <a href="">leer mas...</a>
+                </div>
+            </div>
+            <div class="contenido-slider">
+                <img src="../img/Productos/Promosiones/promo2.png" alt="">
+                <div class="description">
+                    <h2>SET DE CUCHILLOS PROFESIONALES</h2>
+                    <p>Conjunto de cuchillo de cocina de calidad robusto y agradable con cuchilla para el corte,
+                         picar verduras, ensaladas, de picar comida, etc. El cuchillo también incluye un 
+                         pelador y unas tijeras de múltiples funciones.</p>
+                    <a href="">leer mas...</a>
+                </div>
+            </div>
+            <div class="contenido-slider">
+                <img src="../img/Productos/Promosiones/promo3.png" alt="">
+                <div class="description">
+                    <h2>SET DE MOLDES</h2>
+                    <p>Ofrecemos moldes desechables, en aluminio y moldes profesionales
+                        en acero inoxidable 201-NKS</p>
+                    <a href="">leer mas...</a>
+                </div>
+            </div>
+            <div class="contenido-slider">
+                <img src="../img/Productos/Promosiones/promo1.png" alt="">
+                <div class="description">
+                    <h2>MOLDES SILICONADOS</h2>
+                    <p>Ideales para altas temperaturas y con facilidad de limpieza.</p>
+                    <a href="">leer mas...</a>
+                </div>
+            </div>
+        </div>
+        <div class="selector-slider">
+            <div class="selector-container">
+                <div class="slider1 sliderCircle"></div>
+                <div class="slider2 sliderCircle"></div>
+                <div class="slider3 sliderCircle"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end slider section -->
+
+    <section class="product-section">
+        <div class="container-ordenar">
+            ordenar por:
+            <select class="select-ordenar" name="select">
+                <option value="value1"> Menor precio</option>
+                <option value="value2"> Mayor precio</option>
+                <option value="value5" selected> Más relevantes</option>
+            </select>
+            <!-- <button type="button" class="trigger"><span> relevantes</span>
+                <svg class="arrow" width="12" height="12" viewBox="0 0 12 12">
+                    <path fill-opacity=".45" d="M6 7.057L9.352 3.705 10.148 4.5 6 8.648 1.852 4.5 2.648 3.705z"></path>
+                </svg>
+            </button> -->
+        </div>
+        <div class="container-product">
+            <div class="container-filtar">
+                <h3>CATEGORIA</h3>
+                <div>
+                    <h5>Utensilios</h5>
+                </div>
+                <h5>Equipos </h5>
+                <h5>Materia prima</h5>
+                <h5>Dotación</h5>
+
+                <h3>PRECIO</h3>
+                <h5>Menos de $10.000</h5>
+                <h5>$10.000 - $100.000</h5>
+                <h5>$100.000 - $1.000.000</h5>
+                <h5>Más de $1.000.000</h5>
+
+                <h3>CALIFICACIÓN</h3>
+                <h5>5 estrellas</h5>
+                <h5>4 estrellas</h5>
+                <h5>3 estrellas</h5>
+                <h5>2 estrellas</h5>
+                <h5>1 estrellas</h5>
+            </div>
+            <div class="container-card">
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Cuchillo_pan.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                    <a href="../pags/articulo.html">
+                                        <div class="ti-view"></div>
+                                    </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                </div>
+                <!-- INICIO PRUEBA-->
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Manga.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Manga pastelera</h5>
+                        <h6>$10.900</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Tamizador.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Tamiz de malla</h5>
+                        <h6>$11.900</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Rodillo.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Rodillo</h5>
+                        <h6>$14.900</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Moldes.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Moldes desmontables</h5>
+                        <h6>$23.500</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Balanza.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Balanza digital</h5>
+                        <h6>$16.900</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Batidora.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Batidora</h5>
+                        <h6>$53.900</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Termometro.jpg" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Termometro digital</h5>
+                        <h6>$19.800</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Horno.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Horno panaderia</h5>
+                        <h6>$440.000</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Polvo_hornear.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Polvo para hornear</h5>
+                        <h6>$15.500</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Cacao.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Cacao</h5>
+                        <h6>$8.590</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Avena_harina.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Harina de avena</h5>
+                        <h6>$19.600</h6>
+                    </div>
+                </div>
+                <div class="card card-product">
+                    <div class="card-product__img">
+                        <img src="../img/Productos/Productos/Frutas.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                            <li><button>
+                                <a href="../pags/articulo.html">
+                                    <div class="ti-view"></div>
+                                </a>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-shopping-cart"></div>
+                                </button></li>
+                            <li><button>
+                                    <div class="ti-heart"></div>
+                                </button></li>
+                        </ul>
+                    </div>
+                    <div class="card-descrip">
+                        <h5>Canasta con frutas</h5>
+                        <h6>$18.900</h6>
+                    </div>
+                </div>
+                
+                <!-- FIN PRUEBA-->
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            © 2020 All Rights Reserved By
+            <a href="#">Club Pasteleria</a>
+        </p>
+    </section>
+    <!-- footer section -->
+    <script src="../js/productos.js"></script>
+</body>
+
+</html>
