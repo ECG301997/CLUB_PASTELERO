@@ -1,0 +1,75 @@
+.cartModal {
+    display: show;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 500px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Estilo para el nombre y la cantidad del producto */
+.cart-item span:first-child {
+    flex: 1;
+    text-align: left;
+}
+
+/* Estilo para el precio del producto */
+.cart-item span:last-child {
+    width: 80px;
+    text-align: right;
+}
+
+/* Botón para eliminar el producto */
+.cart-item button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Estilo del resumen del carrito */
+#cart-summary {
+    text-align: right;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+#cart-summary button {
+    background-color: #28a745; /* Color de fondo verde */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+#cart-summary button:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+#cart-summary button:active {
+    background-color: #1e7e34; /* Color aún más oscuro al hacer clic */
+}
+

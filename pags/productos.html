@@ -8,6 +8,7 @@
     <title>Productos</title>
     <link rel="shortcut icon" href="img/logo.png" />
     <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -43,6 +44,12 @@
                         <div class="color-no"></div>
                         <div class="color-yes"></div>
                     </div>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="carroCompras.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span> <!-- Contador de elementos en el carrito -->
+                    </a>
                 </div>
                 <div class="container-user">
                     <div class="user">H</div>
@@ -152,9 +159,9 @@
                                         <div class="ti-view"></div>
                                     </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 2, name: 'Cuchillo para pan', price: 21400 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -175,9 +182,11 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                                <li>
+                                    <button onclick="addToCartAndRedirect({ id: 1, name: 'Manga pastelera', price: 10900 })">
+                                        <div class="ti-shopping-cart"></div>
+                                    </button>
+                                </li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -197,9 +206,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 3, name: 'Tamiz de malla', price: 11900 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -219,9 +228,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 4, name: 'Rodillo', price: 14900 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -241,9 +250,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 5, name: 'Moldes desmontables', price: 23500 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -263,9 +272,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 6, name: 'Balanza digital', price: 16900 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -285,9 +294,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 7, name: 'Batidora', price: 53900 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -307,9 +316,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 8, name: 'Termómetro digital', price: 19800 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -329,9 +338,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 9, name: 'Horno panadería', price: 440000 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -351,9 +360,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 10, name: 'Polvo para hornear', price: 15500 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -373,9 +382,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 11, name: 'Cacao', price: 8590 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -395,9 +404,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 12, name: 'Harina de avena', price: 19600 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>
@@ -417,9 +426,9 @@
                                     <div class="ti-view"></div>
                                 </a>
                                 </button></li>
-                            <li><button>
-                                    <div class="ti-shopping-cart"></div>
-                                </button></li>
+                            <li><button onclick="addToCartAndRedirect({ id: 13, name: 'Canasta con frutas', price: 18900 })">
+                                <div class="ti-shopping-cart"></div>
+                            </button></li>
                             <li><button>
                                     <div class="ti-heart"></div>
                                 </button></li>

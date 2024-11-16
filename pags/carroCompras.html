@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de compras</title>
+    <link rel="shortcut icon" href="C:\Users\migue\source\repos\Psp\CLUB_PASTELERO\img\logo.png" />
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/carroCompras.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- header section --> 
+    <header id="menu-superior">
+        <div class="container">
+            <div id="menu">
+                <a class="img-logo" href="../index.html">
+                    <img src="C:\Users\migue\source\repos\Psp\CLUB_PASTELERO\img\logo.png" alt="">
+                </a>
+                <ul class="nawRecetas">
+                    <li class="li"><a href="../index.html">Home</a></li>
+                    <li class="li"><a href="./recetas.html">Recetas</a></li>
+                    <li class="li"><a class="actual" href="./productos.html">Productos</a></li>
+                    <li class="li"><a href="./zona_interactiva.html">Zona interactiva</a></li>
+                    <li class="li"><a href="../index.html">Blog</a></li>
+                    <li class="li-busqueda">
+                        <form class="nav-search" action="https://www.mercadolibre.com.co/jm/search" method="GET">
+                            <input type="text" placeholder="Buscar producto" maxlength="120" autofocus=""
+                                autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
+                                tabindex="2">
+                            <button type="submit" class="nav-button" tabindex="3">
+                                <div role="img" class="nav-search-icon"></div>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="li">
+                    <div class="header-nav">
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                    </div>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="carroCompras.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span> <!-- Contador de elementos en el carrito -->
+                    </a>
+                </div>
+                <div class="container-user">
+                    <div class="user">H</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section -->
+    <!-- Carrito de Compras Modal -->
+    <div class="cartModal" id="cart-modal">
+        <section id="section_carro_compras">
+            <h1>Carrito de Compras</h1>
+            <div id="cart-items">
+                <!-- Los productos se agregarán aquí dinámicamente con `updateCart()` -->
+            </div>
+            <div id="cart-summary">
+                <p>Total: $<span id="cart-total">0</span></p>
+                <button onclick="checkout()">Pagar</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            © 2020 All Rights Reserved By
+            <a href="#">Club Pasteleria</a>
+        </p>
+    </section>
+    <!-- footer section -->
+</body>
+<script src="../js/carroCompras.js"></script>
+</html>
