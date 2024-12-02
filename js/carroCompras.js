@@ -67,5 +67,50 @@ function updateCartCount() {
     cartCountElement.textContent = totalItems;
 }
 
+const suggestedProducts = [
+    { id: 14, name: "Moldes", price: 23500, image: "../img/Productos/Productos/Moldes.png" },
+    { id: 15, name: "Canasta de frutas", price: 18900, image: "../img/Productos/Productos/Frutas.png" },
+    { id: 16, name: "Rodillo", price: 14900, image: "../img/Productos/Productos/Rodillo.png" },
+    { id: 17, name: "Cacao", price: 8590, image: "../img/Productos/Productos/Cacao.png" }
+];
+
+function loadSuggestedProducts() {
+    const container = document.querySelector(".suggested-container");
+
+    suggestedProducts.forEach(product => {
+        const productCard = document.createElement("div");
+        productCard.className = "suggested-card";
+        productCard.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <h5>${product.name}</h5>
+            <h6>$${product.price.toLocaleString()}</h6>
+            <button onclick="addToCartAndRedirect({ id: ${product.id}, name: '${product.name}', price: ${product.price} })">Agregar</button>
+        `;
+        container.appendChild(productCard);
+    });
+}
+
+// Llamar a la función para cargar los productos sugeridos
+loadSuggestedProducts();
+
 // Cargar el carrito al cargar carroCompras.html
 loadCartFromStorage();
+
+function addToCartAndRedirect(product) {
+    // Obtener el carrito del localStorage
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Verificar si el producto ya está en el carrito
+    const existingProduct = cart.find(item => item.id === product.id);
+    if (existingProduct) {
+        existingProduct.quantity += 1; // Incrementar la cantidad si ya existe
+    } else {
+        cart.push({ ...product, quantity: 1 }); // Agregar nuevo producto
+    }
+
+    // Guardar el carrito actualizado en localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Redirigir a la página del carrito
+    window.location.href = "carroCompras.html";
+}

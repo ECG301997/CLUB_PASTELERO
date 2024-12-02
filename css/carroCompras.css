@@ -1,17 +1,16 @@
 .cartModal {
     display: show;
-    position: fixed;
+    position: absolute; /* Cambiar a absolute */
     right: 0;
     top: 80px;
     width: 500px;
-    height: 100%;
+    height: calc(100vh - 80px - 50px); /* Altura ajustada para dejar espacio al footer */
     background-color: #fff;
     border-left: 1px solid #ddd;
     padding: 20px;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
 }
-
 
 #cart-items {
     margin-bottom: 20px;
@@ -73,3 +72,130 @@
     background-color: #1e7e34; /* Color aún más oscuro al hacer clic */
 }
 
+/* Contenedor para el mensaje del carrito vacío */
+.cart-message {
+    position: relative; /* Cambiar a relative */
+    float: left; /* Asegura que quede en la parte izquierda */
+    width: calc(100% - 500px); /* Resta el ancho del cartModal */
+    min-height: calc(100vh - 80px); /* Asegura que ocupe el espacio restante */
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Encabezado del mensaje */
+.cart-message-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    margin-bottom: 15px;
+}
+
+/* Estilo del ícono */
+.cart-message-header i {
+    font-size: 40px; /* Tamaño del ícono */
+    color: #28a745; /* Color verde */
+}
+
+/* Texto del mensaje */
+.cart-message h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cart-message p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+.footer_section {
+    position: relative; /* Asegura que se posicione en el flujo del documento */
+    background-color: #273135;
+    padding: 20px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    clear: both; /* Asegura que el footer no quede flotando junto a otros elementos */
+    text-align: center;
+}
+
+.footer_section p {
+    color: #fbfcfd;
+    margin: 0;
+}
+
+.footer_section a {
+    color: #fbfcfd;
+    text-decoration: none;
+}
+
+/* Contenedor principal de productos sugeridos */
+.suggested-products {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.suggested-products h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.suggested-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Estilo de cada producto sugerido */
+.suggested-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.suggested-card h5 {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.suggested-card h6 {
+    font-size: 12px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.suggested-card button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggested-card button:hover {
+    background-color: #218838;
+}
